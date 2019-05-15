@@ -5,9 +5,12 @@ public class AccountingSync implements  Runnable{
     }
     @Override
     public  void run(){
-        for (int j = 0; j< 1000000;j++){
-            increase();
+        synchronized (this){
+            for (int j = 0; j< 1000000;j++){
+                increase();
+            }
         }
+
     }
 
     public static  void main (String [] args)throws  InterruptedException{
