@@ -60,6 +60,7 @@ public class BarcodeScannerResolver {
     //key事件处理
     public void resolveKeyEvent(KeyEvent event) {
 
+
         int keyCode = event.getKeyCode();
 
         checkLetterStatus(event);//字母大小写判断

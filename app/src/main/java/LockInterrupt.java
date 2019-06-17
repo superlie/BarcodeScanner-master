@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class LockInterrupt extends Thread {
@@ -51,5 +52,6 @@ public class LockInterrupt extends Thread {
         t2.start();
         Thread.sleep(1000);
     }
+
 
 }
